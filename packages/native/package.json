@@ -1,5 +1,5 @@
 {
-  "name": "@lucid-ui/native",
+  "name": "@lucidjs/native",
   "main": "expo-router/entry",
   "version": "0.1.0",
   "private": false,

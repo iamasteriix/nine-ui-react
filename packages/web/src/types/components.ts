@@ -1,5 +1,5 @@
+import type { SxProps } from '@lucidjs/core';
 import type { CSSProperties, ReactElement, Ref, } from 'react';
-import type { SxProps } from '@lucid-ui/core';
 import type { A11yProps } from './accessibility';
 
 

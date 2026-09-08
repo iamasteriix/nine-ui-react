@@ -1,5 +1,5 @@
-import type { SxElevation, } from '@lucid-ui/core';
 import type { LayoutProps } from '@/types';
+import type { SxElevation, } from '@lucidjs/core';
 
 
 type ViewVariant = {

@@ -1,10 +1,10 @@
 import type { PlatformFlags } from '@/types';
-import type { FontMetadata } from './types';
 import { findProjectRoot, resolveTargetPlatform } from '@/utils';
-import { locateInitFonts } from './init';
-import path from 'path';
-import fs from 'fs';
 import * as fontkit from 'fontkit';
+import fs from 'fs';
+import path from 'path';
+import { locateInitFonts } from './init';
+import type { FontMetadata } from './types';
 
 
 const FORMAT_MAP: Record<string, string> = {
@@ -45,7 +45,7 @@ const scanDirForFonts = (dirPath: string): FontMetadata[] => {
       // `openSync()` returns a union of `Font | FontCollection`
       // so narrow out `FontCollection` because it is out of scope
       if ('fonts' in font) {
-        console.log(`[lucid-ui] Skipping unsupported font collection: ${file}`);
+        console.log(`[lucidjs] Skipping unsupported font collection: ${file}`);
         continue;
       }
       const weight = font['OS/2']?.usWeightClass || 400;
@@ -60,7 +60,7 @@ const scanDirForFonts = (dirPath: string): FontMetadata[] => {
       });
 
     } catch (error) {
-      console.warn(`[lucid-ui] Warning: Could not parse font ${file}`, error);
+      console.warn(`[lucidjs] Warning: Could not parse font ${file}`, error);
     }
   }
 
@@ -78,7 +78,7 @@ const scanDirForFonts = (dirPath: string): FontMetadata[] => {
  * Apparently, this is also how it works on native? Sure, I guess.
  */
 const writeFontCss = (fontMap: Map<string, FontMetadata>): void => {
-  const webPackageEntry = require.resolve('@lucid-ui/web');
+  const webPackageEntry = require.resolve('@lucidjs/web');
   const webDistDir = path.dirname(webPackageEntry);
   const fontCssPath = path.join(webDistDir, 'assets/styles/fonts.css');
   const generatedFontsDir = path.join(webDistDir, 'assets/fonts');

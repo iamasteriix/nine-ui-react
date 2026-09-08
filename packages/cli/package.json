@@ -1,18 +1,18 @@
 {
-  "name": "@lucid-ui/cli",
+  "name": "@lucidjs/cli",
   "private": false,
   "version": "0.1.0",
   "description": "Lucid UI setup manager",
   "bin": {
-    "lucid-ui": "./dist/index.js"
+    "lucidjs": "./dist/index.js"
   },
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch"
   },
   "peerDependencies": {
-    "@lucid-ui/core": ">=0",
-    "@lucid-ui/web": ">=0"
+    "@lucidjs/core": ">=0",
+    "@lucidjs/web": ">=0"
   },
   "devDependencies": {
     "@types/fontkit": "2.0.9",

@@ -1,5 +1,5 @@
 {
-  "name": "@lucid-ui",
+  "name": "@lucidjs",
   "private": false,
   "description": "Design beautiful products for everyone.",
   "scripts": {
@@ -13,6 +13,7 @@
     "packages/native",
     "packages/icons",
     "packages/core",
-    "packages/cli"
+    "packages/cli",
+    "packages/desktop"
   ]
 }

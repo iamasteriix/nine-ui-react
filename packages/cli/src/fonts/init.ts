@@ -1,15 +1,15 @@
 import type { PlatformFlags, } from '@/types';
 import { findProjectRoot, resolveTargetPlatform } from '@/utils';
-import { updateFonts } from './update';
 import fs from 'fs';
 import path from 'path';
+import { updateFonts } from './update';
 
 
 /**
  * Locates fonts in core package dynamically
  */
 export const locateInitFonts = () => {
-  const corePackageEntry = require.resolve('@lucid-ui/core');
+  const corePackageEntry = require.resolve('@lucidjs/core');
   const corePackageDir = path.dirname(corePackageEntry)
   return path.join(corePackageDir, 'assets/fonts');
 }

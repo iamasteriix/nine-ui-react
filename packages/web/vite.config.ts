@@ -42,7 +42,7 @@ export default defineConfig ({
       external: [
         'react',
         'react-dom',
-        '@lucid-ui/web/assets/styles/fonts.css',
+        '@lucidjs/web/assets/styles/fonts.css',
       ],
       output: {
         globals: {

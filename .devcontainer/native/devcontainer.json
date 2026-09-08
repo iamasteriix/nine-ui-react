@@ -1,5 +1,5 @@
 {
-  "name": "Lucid UI Kit - Native",
+  "name": "LucidJS - Native Kit",
   "dockerComposeFile": "../../docker-compose.yml",
   "service": "native",
   "workspaceFolder": "/app/packages/native/",

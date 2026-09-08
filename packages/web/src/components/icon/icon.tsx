@@ -1,6 +1,6 @@
-import type { IconProps, IconVariant } from "./icon.types";
-import { resolveSx, useMediaQuery } from "@lucid-ui/core";
 import { resolveA11y, } from "@/utils";
+import { resolveSx, useMediaQuery } from "@lucidjs/core";
+import type { IconProps, IconVariant } from "./icon.types";
 
 
 const sizeMap: Record<NonNullable<IconVariant['size']>, string> = {

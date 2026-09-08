@@ -1,6 +1,6 @@
-import type { ReactNode } from "react";
-import type { ThemeTokensType } from "@lucid-ui/core";
 import type { StorageAdapter, StorageTopics } from "@/types";
+import type { ThemeTokensType } from "@lucidjs/core";
+import type { ReactNode } from "react";
 
 
 export type ThemesType = Record<string, ThemeTokensType>;

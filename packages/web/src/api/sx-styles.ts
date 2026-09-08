@@ -1,6 +1,6 @@
-import type { SxProps, ThemeTokensType } from '@lucid-ui/core';
 import type { VariantRegistry, } from '@/types';
-import { tokens } from '@lucid-ui/core';
+import type { SxProps, ThemeTokensType } from '@lucidjs/core';
+import { tokens } from '@lucidjs/core';
 
 
 /**

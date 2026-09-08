@@ -1,9 +1,9 @@
-import type { CSSProperties, } from 'react';
-import type { ThemeProviderProps, ThemesType } from './types';
-import { useCallback, useEffect, useLayoutEffect, useMemo, useState } from 'react';
-import { tokens, } from '@lucid-ui/core';
 import { storageAdapter } from '@/api';
+import { tokens, } from '@lucidjs/core';
+import type { CSSProperties, } from 'react';
+import { useCallback, useEffect, useLayoutEffect, useMemo, useState } from 'react';
 import { ThemeContext } from './context';
+import type { ThemeProviderProps, ThemesType } from './types';
 import { toCSSVariables } from './utils';
 
 

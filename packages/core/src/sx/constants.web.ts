@@ -140,11 +140,11 @@ export const sxLetterSpacing: Record<SxTracking, string> = {
 };
 
 export const sxFontWeight: Record<SxFontWeight, string> = {
-  light: 'var(--typography-weightLight)',
-  regular: 'var(--typography-weightRegular)',
-  medium: 'var(--typography-weightMedium)',
-  'semi-bold': 'var(--typography-weightSemibold)',
-  bold: 'var(--typography-weightBold)',
+  light:        'var(--typography-weightLight)',
+  regular:      'var(--typography-weightRegular)',
+  medium:       'var(--typography-weightMedium)',
+  'semi-bold':  'var(--typography-weightSemibold)',
+  bold:         'var(--typography-weightBold)',
 };
 
 export const sxTypeface: Record<SxTypeface, string> = {

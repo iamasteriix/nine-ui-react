@@ -15,7 +15,7 @@ Use the `SxStyles.variants()` API for simplified development and readability. Us
 Starting each object with the `name` property helps limit type suggestions to the specific variant's properties. For example, under `view`, providing `name: 'flat'` only suggests properties like `fill` and `elevation`, and flags invalid properties.
 
 ```tsx
-import { SxStyles } from '@lucid-ui/web';
+import { SxStyles } from '@lucidjs/web';
 
 const variants = SxStyles.variants({
   view: {
@@ -39,7 +39,7 @@ Lucid Moonsong provides a deliberately limited `sx` prop for defining custom sty
 `SxStyles.create()` provides a simplified interface to define and manage your component styles, along with static type checking and suggestions.
 
 ```tsx
-import { SxStyles } from '@lucid-ui/web';
+import { SxStyles } from '@lucidjs/web';
 
 const styles = SxStyles.create(
   card: {

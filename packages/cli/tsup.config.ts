@@ -11,8 +11,8 @@ export default defineConfig({
   outDir: 'dist',
   minify: true,
   external: [
-    '@lucid-ui/core',
-    '@lucid-ui/web'
+    '@lucidjs/core',
+    '@lucidjs/web'
   ],
   banner: {
     js: '#!/usr/bin/env node',  // automatically inject the node shebang at the top of the compiled file

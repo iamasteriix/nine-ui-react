@@ -1,5 +1,5 @@
+import { tokens } from "@lucidjs/core";
 import type { ThemeVarsPartial } from "storybook/theming";
-import { tokens } from "@lucid-ui/core";
 
 
 const { colors, shape, typography, } = tokens;

@@ -1,8 +1,8 @@
-import type { ResponsiveProp, SxGap, SxSpace } from "@lucid-ui/core";
-import type { ResponsiveColType, ResponsiveHookOptions } from "./grid.types";
-import { resolveBreakpoint, useMediaQuery } from "@lucid-ui/core";
-import { useLayoutEffect, useRef, useState } from "react";
 import { resolveSizeToPx } from "@/utils";
+import type { ResponsiveProp, SxGap, SxSpace } from "@lucidjs/core";
+import { resolveBreakpoint, useMediaQuery } from "@lucidjs/core";
+import { useLayoutEffect, useRef, useState } from "react";
+import type { ResponsiveColType, ResponsiveHookOptions } from "./grid.types";
 
 
 /**

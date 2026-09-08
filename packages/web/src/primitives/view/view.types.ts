@@ -1,5 +1,5 @@
-import type { SxElevation, SxShadow } from '@lucid-ui/core';
 import type { LayoutProps, } from '@/types';
+import type { SxElevation, SxShadow } from '@lucidjs/core';
 
 
 export type FlatVariant = {

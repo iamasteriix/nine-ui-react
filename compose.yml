@@ -1,12 +1,12 @@
 services:
   base:
-    image: lucid-ui
+    image: lucidjs
     build:
       context: .
       target: development
 
   web:
-    image: lucid-ui
+    image: lucidjs
     command: npm run dev --workspace=packages/web -- --host 0.0.0.0
     volumes:
       - .:/app
@@ -16,7 +16,7 @@ services:
       - "3001:3001"
 
   native:
-    image: lucid-ui
+    image: lucidjs
     volumes:
       - .:/app
       - native_root_modules:/app/node_modules/
@@ -24,8 +24,25 @@ services:
     ports:
       - "4001:4001"
 
+  desktop:
+    image: lucidjs
+    command: npm run tauri dev --workspaces/desktop
+    environment:
+      - DISPLAY=${DISPLAY}
+    volumes:
+      - .:/app
+      - desktop_root_modules:/app/node_modules/
+      - desktop_workspace_modules:/app/packages/desktop/node_modules/
+      - desktop_target:/app/packages/desktop/src-tauri/target
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    ports:
+      - "5001:5001"
+
 volumes:
   web_root_modules:
   web_workspace_modules:
   native_root_modules:
   native_workspace_modules:
+  desktop_root_modules:
+  desktop_workspace_modules:
+  desktop_target:

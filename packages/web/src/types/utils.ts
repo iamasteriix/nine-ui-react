@@ -1,4 +1,4 @@
-import type { ThemeTokensType } from "@lucid-ui/core";
+import type { ThemeTokensType } from "@lucidjs/core";
 
 
 /**

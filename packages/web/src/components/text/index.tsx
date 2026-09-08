@@ -1,7 +1,7 @@
-import type { TextProps } from './types';
-import { useContext } from 'react';
-import { resolveSx, useMediaQuery, } from '@lucid-ui/core';
 import { resolveA11y, } from '@/utils';
+import { resolveSx, useMediaQuery, } from '@lucidjs/core';
+import { useContext } from 'react';
+import type { TextProps } from './types';
 import { resolveClampStyle, resolveVariantClasses, TextContext } from './utils';
 
 

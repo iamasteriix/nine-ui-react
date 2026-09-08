@@ -1,9 +1,9 @@
-import type { AppLayoutViewProps } from './types';
-import { resolveSx, useMediaQuery } from '@lucid-ui/core';
 import { ThemeProvider } from '@/theme';
 import { resolveA11y } from '@/utils';
+import { resolveSx, useMediaQuery } from '@lucidjs/core';
+import '@lucidjs/web/assets/styles/fonts.css';
+import type { AppLayoutViewProps } from './types';
 import { resolveVariantClasses } from './utils';
-import '@lucid-ui/web/assets/styles/fonts.css';
 
 
 export const AppLayoutView = ({

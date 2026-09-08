@@ -1,8 +1,8 @@
-import { useState } from "react";
-import * as Icons from "@lucid-ui/icons";
-import { View } from "@/primitives";
-import { Text } from "@/components";
 import { SxStyles } from "@/api";
+import { Text } from "@/components";
+import { View } from "@/primitives";
+import * as Icons from "@lucidjs/icons";
+import { useState } from "react";
 
 
 const IconsList = Object.entries(Icons);

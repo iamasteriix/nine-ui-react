@@ -1,6 +1,6 @@
-import type { ReactNode, Ref } from "react";
-import type { ResponsiveProp } from "@lucid-ui/core";
 import type { ViewProps, } from "@/primitives";
+import type { ResponsiveProp } from "@lucidjs/core";
+import type { ReactNode, Ref } from "react";
 
 
 export type ColumnRepeat = 'fill' | 'fit';

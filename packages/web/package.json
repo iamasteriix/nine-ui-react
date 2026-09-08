@@ -1,5 +1,5 @@
 {
-  "name": "@lucid-ui/web",
+  "name": "@lucidjs/web",
   "private": false,
   "version": "0.1.0",
   "description": "Lucid UI Kit for Web",
@@ -33,9 +33,9 @@
   },
   "devDependencies": {
     "@eslint/js": "10.0.1",
-    "@lucid-ui/cli": "0.1.0",
-    "@lucid-ui/core": "0.1.0",
-    "@lucid-ui/icons": "0.1.0",
+    "@lucidjs/cli": "0.1.0",
+    "@lucidjs/core": "0.1.0",
+    "@lucidjs/icons": "0.1.0",
     "@storybook/addon-docs": "10.5.10",
     "@storybook/react-vite": "10.5.10",
     "@types/node": "26.2.0",

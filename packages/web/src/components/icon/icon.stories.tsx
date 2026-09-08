@@ -1,7 +1,7 @@
+import { Search } from "@lucidjs/icons";
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import type { IconProps, IconVariant } from "./icon.types";
-import { Search } from "@lucid-ui/icons";
 import { Icon } from "./icon";
+import type { IconProps, IconVariant } from "./icon.types";
 
 
 export default {
